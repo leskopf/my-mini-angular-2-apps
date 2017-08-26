@@ -5,7 +5,7 @@
     <h1>GitHub profile search page</h1>
     <div class="col-md-12">
       <form>
-        <input type="text" placeholder="Enter A GitHub Username ..." [(ngModel)]="username" class="form-control ">
+       <input name="username" type="text" placeholder="Enter A GitHub Username ..." [(ngModel)]="username" class="form-control" (keyup)="searchUser()"> -->
       </form>
     </div>
     <div class="col-md-8 col-md-offset-2">

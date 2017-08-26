@@ -14,6 +14,7 @@ import 'rxjs/add/operator/map';
 export class ProfileComponent {
   user:any[];
   repos:any[];
+  username:string;
   constructor(private _githubService:GitHubService) {
     this._githubService.getUser().subscribe(user => {
       console.log(user);
@@ -23,6 +24,9 @@ export class ProfileComponent {
     this._githubService.getRepos().subscribe(repos => {
       this.repos = repos;
     })
+  }
+  searchUser() {
+    console.log('it works');
   }
 
 }

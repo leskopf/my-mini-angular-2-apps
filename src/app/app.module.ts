@@ -11,7 +11,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 import { GitHubService } from './services/github/github.service';
 import { HttpModule } from '@angular/http';
-
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '',
@@ -41,6 +41,7 @@ const appRoutes: Routes = [
     ),
     BrowserModule,
     HttpModule,
+    FormsModule ,
   ],
   providers: [GitHubService],
   bootstrap: [AppComponent]
